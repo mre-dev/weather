@@ -9,7 +9,6 @@
         <li>Show the weather by Location</li>
         <li>Show the weather by Search</li>
         <li>Show the weather for the coming days</li>
-        <li>Show the weather for the coming days</li>
         <li>Display icons based on weather type</li>
         <li>Show Pressure, Humidity and Wind Speed</li>
     </ul>
