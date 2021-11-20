@@ -1,10 +1,10 @@
 <h1 align="center">Show Weather with location and API</h1>
 
-<br><br>
+</br>
+
+<strong>Features and capabilities</strong>
 
 <div>
-    <strong>Features and capabilities</strong>
-    <br>
     <ul>
         <li>Show the weather by Location</li>
         <li>Show the weather by Search</li>
@@ -15,8 +15,9 @@
     </ul>
 </div>
 
-<p><span style="color: #ff0000;">:notice : </span>To run the project, you must run the project on a server or create a virtual server on your local system.</p>
+<p><strong>notice : </strong>To run the project, you must run the project on a server or create a virtual server on your local system.</p>
 
 <h2></h2>
-
+<p>Screenshot</p>
+</br>
 <img src="assets/image/screenshot.png" alt="Weather Screenshot">
