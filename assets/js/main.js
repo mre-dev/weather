@@ -91,7 +91,9 @@ async function findWatherByLocation(cityInformation) {
         liveLocationCity = await data.filter(item => item.name.toLowerCase().includes(liveLocation));
         showWeatherInformation(liveLocationCity[0].name, liveLocationCity[0].id);
     })
-    .catch(error => console.log(error));
+    .catch(error => {
+        showWeatherInformation("Dubai", 292224);
+    });
 }
 
 function showWeatherInformation(cityName, cityId) {
