@@ -11,4 +11,4 @@
     </ul>
 </div>
 
-<p><span>(&#x1F34E;):notice : </span>To run the project, you must run the project on a server or create a virtual server on your local system.</p>
+<p><span style="color: #ff0000;">:notice : </span>To run the project, you must run the project on a server or create a virtual server on your local system.</p>
