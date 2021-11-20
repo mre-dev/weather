@@ -17,7 +17,7 @@
 
 <h2></h2>
 
-<p align="center"><a href="https://mre-dev.github.io/weather/" target="_blank">----- Click To View Demo -----</a>{:target="_blank" rel="noopener"}</p>
+<p align="center"><a href="https://mre-dev.github.io/weather/">----- Click To View Demo -----</a></p>
 
 <h2></h2>
 
