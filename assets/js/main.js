@@ -183,5 +183,5 @@ function getWindDirection(windDeg, windSpeed) {
 }
 
 document.forms.searchForm.addEventListener('submit', function(event){
-    event.preventDefault();
+    event.preventDefault(); 
 });
