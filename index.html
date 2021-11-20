@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weahter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/compiled-css/style.css">
+    <script src="assets/js/weatherImage.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <form id="searchForm" action="#" method="post">
+                <input type="text" id="cityInput" placeholder="Your City ..." autocomplete="off">
+            </form>
+            <div id="cityBox">
+                <ul id="cityList">
+                </ul>
+            </div>
+        </div>
+
+        
+        <div id="weatherInfo">
+
+            <div class="weatherInfo">
+                <h2 id="cityName">City Name</h2>
+                <strong id="todayName">Now Day</strong>
+                <span id="showRain">0%</span>
+                <span id="showWind">Test, 0m/s</span>
+                <span id="showPressure">0Pha</span>
+            </div>
+
+            <div class="weatherIcon">
+                <img id="tempImage" src="assets/image/clear-sky.png" alt="clear sky">
+            </div>
+
+            <div class="weatherTemperture">
+                <span id="mainTemp">+0 °C</span>
+            </div>
+
+        </div>
+        
+        <div class="day" id="days">
+            <div>
+                <img src="assets/image/few-clouds.png" alt="">
+                <span class="dayName">Day</span>
+                <span class="tempDay">+1 °C</span>
+            </div>
+            <div>
+                <img src="assets/image/few-clouds.png" alt="">
+                <span class="dayName">Day</span>
+                <span class="tempDay">+1 °C</span>
+            </div>
+            <div>
+                <img src="assets/image/few-clouds.png" alt="">
+                <span class="dayName">Day</span>
+                <span class="tempDay">+1 °C</span>
+            </div>
+            <div>
+                <img src="assets/image/few-clouds.png" alt="">
+                <span class="dayName">Day</span>
+                <span class="tempDay">+1 °C</span>
+            </div>
+            <div>
+                <img src="assets/image/few-clouds.png" alt="">
+                <span class="dayName">Day</span>
+                <span class="tempDay">+1 °C</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
