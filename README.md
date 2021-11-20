@@ -15,9 +15,11 @@
     </ul>
 </div>
 
+<h2></h2>
+
 <p><strong>notice : </strong>To run the project, you must run the project on a server or create a virtual server on your local system.</p>
 
 <h2></h2>
+
 <p>Screenshot</p>
-</br>
 <img src="assets/image/screenshot.png" alt="Weather Screenshot">
