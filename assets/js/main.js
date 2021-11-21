@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }, function(error) {
         if(error.message == "User denied Geolocation"){
-            alert("Please Enable Location");
+            alert("Please Enable Your Location");
+            showWeatherInformation("Dubai", 292224);
         }
     });
 });
