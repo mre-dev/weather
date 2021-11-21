@@ -38,7 +38,7 @@ to get weather information.
 <strong>Geocoding API : </strong>
 You can get a free API from 
 <a href="https://locationiq.com/">locationiq.com</a> 
-convert coordinates to the city name.
+to convert coordinates to the city name.
 </p>
 
 <h2></h2>
