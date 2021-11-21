@@ -20,7 +20,24 @@
 
 <h2></h2>
 
-<p><strong>notice : </strong>To run the project, you must run the project on a server or create a virtual server on your local system.</p>
+<p>
+<strong>notice : </strong>
+To run the project, you must run the project on a server or create a virtual server on your local system.
+</p>
+
+<p>
+<strong>Weather API : </strong>
+You can get a free API from 
+<a href="https://openweathermap.org/">Openweathermap.org</a> 
+to get weather information.
+</p>
+
+<p>
+<strong>Geocoding API : </strong>
+You can get a free API from 
+<a href="https://locationiq.com/">locationiq.com</a> 
+convert coordinates to the city name.
+</p>
 
 <h2></h2>
 
