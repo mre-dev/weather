@@ -25,6 +25,8 @@
 To run the project, you must run the project on a server or create a virtual server on your local system.
 </p>
 
+</br>
+
 <p>
 <strong>Weather API : </strong>
 You can get a free API from 
