@@ -1,4 +1,4 @@
-const API_KEY = "pk.faac79ebf4c41ea94b5aeb398fc3d622";
+const API_GEOCODING = "pk.faac79ebf4c41ea94b5aeb398fc3d622";
 const API_WEATHER = "9d9a8ffaf9b9d970a4c48940aeb98f65";
 let currentCityInformation;
 
@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
             method: "GET"
         };
 
-        await fetch(`https://eu1.locationiq.com/v1/reverse.php?key=${API_KEY}&lat=${LATITUDE}&lon=${LONGITUDE}&format=json`, fetchOption)
+        await fetch(`https://eu1.locationiq.com/v1/reverse.php?key=${API_GEOCODING}&lat=${LATITUDE}&lon=${LONGITUDE}&format=json`, fetchOption)
         .then(Response => Response.json())
         .then(async data => currentCityInformation = await data)
         .catch(error => console.log(error));
 
         if(currentCityInformation.address.city == undefined ) {
-            await fetch(`https://us1.locationiq.com/v1/reverse.php?key=${API_KEY}&lat=${LATITUDE}&lon=${LONGITUDE}&format=json`, fetchOption)
+            await fetch(`https://us1.locationiq.com/v1/reverse.php?key=${API_GEOCODING}&lat=${LATITUDE}&lon=${LONGITUDE}&format=json`, fetchOption)
             .then(Response => Response.json())
             .then(async data => currentCityInformation = await data)
             .catch(error => console.log(error));
