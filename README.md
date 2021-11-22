@@ -41,6 +41,11 @@ You can get a free API from
 to convert coordinates to the city name.
 </p>
 
+</br></br>
+
+<p>Note that the APIs used in this project is for testing. You can get proprietary APIs from the two sites above and include them in your project (line one for locationiq.com API and line two for Openweathermap.org API). </p>
+<img src="assets/image/api-key.png" alt="API Keys" width="615px">
+
 <h2></h2>
 
 <p>Screenshot</p>
