@@ -43,7 +43,7 @@ to convert coordinates to the city name.
 
 </br>
 
-<p>Note that the APIs used in this project is for testing. You can get proprietary APIs from the two sites above and include them in your project (line one for locationiq.com API and line two for Openweathermap.org API). </p>
+<p>Note that the APIs used in this project is for testing. You can get proprietary APIs from the two sites above and include them in the assets/js/main.js file in the project (line one for locationiq.com API and line two for Openweathermap.org API, like the below image). </p>
 <img src="assets/image/api-key.png" alt="API Keys" width="615px">
 
 <h2></h2>
