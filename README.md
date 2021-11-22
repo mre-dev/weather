@@ -45,6 +45,10 @@ to convert coordinates to the city name.
 
 <p>Note that the APIs used in this project is for testing. You can get proprietary APIs from the two sites above and include them in your project (line one for locationiq.com API and line two for Openweathermap.org API). </p>
 <img src="assets/image/api-key.png" alt="API Keys" width="615px">
+```
+const API_GEOCODING = "pk.faac79ebf4c41ea94b5aeb398fc3d622";
+const API_WEATHER = "9d9a8ffaf9b9d970a4c48940aeb98f65";
+```
 
 <h2></h2>
 
