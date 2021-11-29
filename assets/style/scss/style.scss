@@ -5,6 +5,7 @@ body {
     background-image: radial-gradient(circle, #1c7fc2 0%, #009cdc 28%, #0d9ade 32%, #011844 100%);
     background-repeat: no-repeat;
     min-height: 100vh;
+    position: relative;
 
     .container {
         padding: 2.5rem 15rem;
