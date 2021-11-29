@@ -172,7 +172,7 @@ function getDays(cityId) {
             document.getElementById("days").innerHTML += forecatItem;
         })
         let tempTimer = setInterval(()=> {
-            document.getElementsByClassName("spin")[0].classList.remove('hiddenSpain');
+            document.querySelector(".spin").classList.remove('hiddenSpain');
             clearInterval(tempTimer);
         }, 1000);
         
