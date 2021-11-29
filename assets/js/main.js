@@ -1,8 +1,15 @@
 const API_GEOCODING = "pk.faac79ebf4c41ea94b5aeb398fc3d622";
 const API_WEATHER = "9d9a8ffaf9b9d970a4c48940aeb98f65";
 let currentCityInformation;
-
+let spinTime;
 document.addEventListener("DOMContentLoaded", function() {
+    spinTime = setInterval(() => {
+        document.querySelector(".spin p").textContent += " . ";
+        if(document.querySelector(".spin p").textContent == "Finding Location  .  .  .  . "){
+            document.querySelector(".spin p").textContent = "Finding Location ";
+        }
+    }, 500);
+
     navigator.geolocation.getCurrentPosition(async function(position) {
         const LATITUDE = position.coords.latitude;
         const LONGITUDE = position.coords.longitude;
@@ -23,12 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.log(error));
         }
 
+        clearInterval(spinTime);
         findWatherByLocation(currentCityInformation);
 
     }, function(error) {
         if(error.message == "User denied Geolocation"){
             alert("Please Enable Your Location");
             showWeatherInformation("Dubai", 292224);
+            clearInterval(spinTime);
         }
     });
 });
@@ -91,9 +100,11 @@ async function findWatherByLocation(cityInformation) {
     .then(async data => {
         liveLocationCity = await data.filter(item => item.name.toLowerCase().includes(liveLocation));
         showWeatherInformation(liveLocationCity[0].name, liveLocationCity[0].id);
+        document.querySelector(".spin p").innerHTML = "Location Finded."
     })
     .catch(error => {
         showWeatherInformation("Dubai", 292224);
+        document.querySelector(".spin p").innerHTML = "Location Not Found."
     });
 }
 
@@ -160,7 +171,11 @@ function getDays(cityId) {
             `;
             document.getElementById("days").innerHTML += forecatItem;
         })
-
+        let tempTimer = setInterval(()=> {
+            document.getElementsByClassName("spin")[0].classList.toggle('hiddenSpain');
+            clearInterval(tempTimer);
+        }, 1000);
+        
     })
     .catch(error => console.log(error));
 }
