@@ -53,7 +53,7 @@ to convert coordinates to the city name.
 
 <h2></h2>
 <div>
-    <p>Updated : </p>
+    <p>Updated (2021-11-29) : </p>
     <ul>
         <li>Added Spinner to Project, user see the spinner and wait for load page</li>
     </ul>
