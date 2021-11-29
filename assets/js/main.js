@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.log(error));
         }
 
-        clearInterval(spinTime);
         findWatherByLocation(currentCityInformation);
 
     }, function(error) {
@@ -100,6 +99,7 @@ async function findWatherByLocation(cityInformation) {
     .then(async data => {
         liveLocationCity = await data.filter(item => item.name.toLowerCase().includes(liveLocation));
         showWeatherInformation(liveLocationCity[0].name, liveLocationCity[0].id);
+        clearInterval(spinTime);
         document.querySelector(".spin p").innerHTML = "Location Finded."
     })
     .catch(error => {
