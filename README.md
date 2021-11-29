@@ -50,3 +50,11 @@ to convert coordinates to the city name.
 
 <p>Screenshot</p>
 <img src="assets/image/weather-screenshot.png" alt="Weather Screenshot">
+
+<h2></h2>
+<div>
+    <p>Updated : </p>
+    <ul>
+        <li>Added Spinner to Project, user see the spinner and wait for load page</li>
+    </ul>
+</div>
